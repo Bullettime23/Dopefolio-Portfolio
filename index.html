@@ -14,6 +14,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
     rel="stylesheet" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/png/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/png/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/png/favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
 </head>
 
 <body>
@@ -106,7 +110,8 @@
         </a>
       </div>
       <div class="home-hero__social">
-        <a href="https://www.instagram.com/peccaturumheavymetal/" class="home-hero__social-icon-link home-hero__social-icon-link--bd-none">
+        <a href="https://www.instagram.com/peccaturumheavymetal/"
+          class="home-hero__social-icon-link home-hero__social-icon-link--bd-none">
           <img src="./assets/png/insta-ico.png" alt="icon" class="home-hero__social-icon" />
         </a>
       </div>
@@ -166,14 +171,14 @@
       <h2 class="heading heading-sec heading-sec__mb-bg">
         <span class="heading-sec__main">Projects</span>
         <span class="heading-sec__sub">
-	Here you can see some of my personal and commercial projects.
+          Here you can see some of my personal and commercial projects.
         </span>
       </h2>
 
       <div class="projects__content">
         <div class="projects__row">
           <div class="projects__row-img-cont">
-            <img src="./assets/png/ankey-asap.png" alt="Ankey ASAP" class="projects__row-img" loading="lazy" />
+            <img src="./assets/jpeg/project-1.jpg" alt="Ankey ASAP" class="projects__row-img" loading="lazy" />
           </div>
           <div class="projects__row-content">
             <h3 class="projects__row-content-title">Ankey ASAP</h3>
@@ -186,7 +191,7 @@
             <a href="./project-1.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case Study</a>
           </div>
         </div>
-     </div>
+      </div>
     </div>
   </section>
   <section id="contact" class="contact sec-pad dynamicBg">
@@ -198,7 +203,8 @@
         </span>
       </h2>
       <div class="contact__form-container">
-        <form action="#" class="contact__form">
+        <form action="https://api.web3forms.com/submit" method="post" class="contact__form">
+          <input type="hidden" name="access_key" value="053d5c26-4292-445d-889c-977622a19284">
           <div class="contact__form-field">
             <label class="contact__form-label" for="name">Name</label>
             <input required placeholder="Enter Your Name" type="text" class="contact__form-input" name="name"
@@ -214,6 +220,8 @@
             <textarea required cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message"
               name="message" id="message"></textarea>
           </div>
+          <!-- Honeypot Spam Protection -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
           <button type="submit" class="btn btn--theme contact__btn">
             Submit
           </button>
@@ -249,8 +257,7 @@
         <div class="main-footer__row main-footer__row-2">
           <h4 class="heading heading-sm text-lt">Lev Medvedev</h4>
           <p class="main-footer__short-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-            tempora explicabo quae quod deserunt
+            A Frontend developer who keeps his code simple and efficient
           </p>
         </div>
       </div>
